@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  displaySecret = false;
+  clicksArray = [];
+
+  handleClick() {
+    this.displaySecret = !this.displaySecret;
+    
+    var item = this.clicksArray.length + 1 + ': ' + Date.now();
+    this.clicksArray.push(item);
+  }
 }

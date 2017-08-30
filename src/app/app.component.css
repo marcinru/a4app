@@ -1,0 +1,13 @@
+p {
+    display: inline;
+    margin-left: 2em;
+    vertical-align: middle;
+}
+
+div:first-of-type {
+    margin-top: 2em;
+}
+
+.white-text {
+    color: white;
+}
