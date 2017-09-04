@@ -6,7 +6,8 @@
   <p *ngIf="displaySecret">Secret Password = tuna</p>
   <div *ngFor="let item of clicksArray; let i = index;"
         [ngStyle]="{ 'background-color': i > 3 ? 'blue' : 'transparent' }"
-        [ngClass]="{ 'white-text': i > 3 }">
+        [ngClass]="{ 'white-text': i > 3 }"
+        [class.bold]="i > 7">
     {{item}}
   </div>
 </div>

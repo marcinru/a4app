@@ -11,3 +11,7 @@ div:first-of-type {
 .white-text {
     color: white;
 }
+
+.bold {
+  font-weight: bold;
+}
